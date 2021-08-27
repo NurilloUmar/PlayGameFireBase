@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeVC" customModule="PlayGameFireBase" customModuleProvider="target">
+            <connections>
+                <outlet property="fBtn" destination="YwB-Jo-Iju" id="Idc-DM-dm8"/>
+                <outlet property="firstCard" destination="HX3-oq-c43" id="0Wq-Bw-geX"/>
+                <outlet property="firstCountLbl" destination="U0s-gw-v7a" id="aE3-ed-B54"/>
+                <outlet property="maxCountLbl1" destination="sRH-bM-QA1" id="8QT-WY-okR"/>
+                <outlet property="maxCountLbl2" destination="vek-Pr-nqj" id="RZK-ej-bgZ"/>
+                <outlet property="roomName" destination="0d0-cI-6kh" id="jGm-Pa-KV2"/>
+                <outlet property="sBtn" destination="l5q-KO-vOK" id="eg4-C1-hxx"/>
+                <outlet property="secondCard" destination="XB1-ZL-3fD" id="gBZ-dO-ByF"/>
+                <outlet property="secondCountLbl" destination="pMt-xB-sU8" id="50v-sE-nmq"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Counter Game" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0d0-cI-6kh">
+                    <rect key="frame" x="100" y="64" width="294" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="T1t-bY-LfP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="40"/>
+                    <color key="textColor" systemColor="systemOrangeColor"/>
+                    <color key="highlightedColor" systemColor="systemTealColor"/>
+                    <color key="shadowColor" systemColor="systemGreenColor"/>
+                    <size key="shadowOffset" width="-2" height="2"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Heg-yZ-LOp">
+                    <rect key="frame" x="30" y="139" width="354" height="722"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HX3-oq-c43">
+                            <rect key="frame" x="0.0" y="0.0" width="354" height="353.5"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0iJ-Sv-zZQ">
+                                    <rect key="frame" x="40" y="10" width="274" height="333.5"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="4hN-04-GFc">
+                                            <rect key="frame" x="0.0" y="0.0" width="274" height="251"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gdL-BH-nbs">
+                                                    <rect key="frame" x="0.0" y="0.0" width="274" height="90"/>
+                                                    <subviews>
+                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPi-aF-ynz">
+                                                            <rect key="frame" x="0.0" y="0.0" width="274" height="40"/>
+                                                            <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                            <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <integer key="value" value="10"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRH-bM-QA1">
+                                                            <rect key="frame" x="0.0" y="50" width="274" height="40"/>
+                                                            <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="24"/>
+                                                            <color key="textColor" systemColor="systemYellowColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U0s-gw-v7a">
+                                                    <rect key="frame" x="0.0" y="110" width="274" height="141"/>
+                                                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="55"/>
+                                                    <color key="textColor" systemColor="systemGreenColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YwB-Jo-Iju">
+                                            <rect key="frame" x="0.0" y="271" width="274" height="62.5"/>
+                                            <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                            <state key="normal" title="Reger That">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <integer key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="fPressed:" destination="-1" eventType="touchUpInside" id="S2y-SQ-bra"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="0iJ-Sv-zZQ" secondAttribute="bottom" constant="10" id="0zk-xy-UDm"/>
+                                <constraint firstItem="0iJ-Sv-zZQ" firstAttribute="top" secondItem="HX3-oq-c43" secondAttribute="top" constant="10" id="8Ff-Hh-pZi"/>
+                                <constraint firstAttribute="trailing" secondItem="0iJ-Sv-zZQ" secondAttribute="trailing" constant="40" id="jU1-5Z-2M8"/>
+                                <constraint firstItem="0iJ-Sv-zZQ" firstAttribute="leading" secondItem="HX3-oq-c43" secondAttribute="leading" constant="40" id="sba-ux-7Ql"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <integer key="value" value="25"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XB1-ZL-3fD">
+                            <rect key="frame" x="0.0" y="368.5" width="354" height="353.5"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="GDB-Rd-jni">
+                                    <rect key="frame" x="40" y="10" width="274" height="333.5"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="QGw-mR-8ir">
+                                            <rect key="frame" x="0.0" y="0.0" width="274" height="251"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jl0-64-7Wd">
+                                                    <rect key="frame" x="0.0" y="0.0" width="274" height="90"/>
+                                                    <subviews>
+                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Mr-DN-hmB">
+                                                            <rect key="frame" x="0.0" y="0.0" width="274" height="40"/>
+                                                            <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                            <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <integer key="value" value="10"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vek-Pr-nqj">
+                                                            <rect key="frame" x="0.0" y="50" width="274" height="40"/>
+                                                            <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
+                                                            <color key="textColor" systemColor="systemYellowColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pMt-xB-sU8">
+                                                    <rect key="frame" x="0.0" y="110" width="274" height="141"/>
+                                                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="55"/>
+                                                    <color key="textColor" systemColor="systemOrangeColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l5q-KO-vOK">
+                                            <rect key="frame" x="0.0" y="271" width="274" height="62.5"/>
+                                            <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                            <state key="normal" title="Reger That">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <integer key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="sPressed:" destination="-1" eventType="touchUpInside" id="lAW-9l-i5b"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="GDB-Rd-jni" secondAttribute="trailing" constant="40" id="NPE-XA-azJ"/>
+                                <constraint firstItem="GDB-Rd-jni" firstAttribute="leading" secondItem="XB1-ZL-3fD" secondAttribute="leading" constant="40" id="RiX-SB-BNI"/>
+                                <constraint firstItem="GDB-Rd-jni" firstAttribute="top" secondItem="XB1-ZL-3fD" secondAttribute="top" constant="10" id="mEp-de-IO7"/>
+                                <constraint firstAttribute="bottom" secondItem="GDB-Rd-jni" secondAttribute="bottom" constant="10" id="uPP-Gr-MHW"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <integer key="value" value="25"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npw-Rg-ucc">
+                    <rect key="frame" x="30" y="69" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="npw-Rg-ucc" secondAttribute="height" id="ITi-Zm-vyp"/>
+                        <constraint firstAttribute="height" constant="40" id="LoY-n9-27I"/>
+                    </constraints>
+                    <color key="tintColor" systemColor="systemYellowColor"/>
+                    <state key="normal" image="arrowshape.turn.up.left.fill" catalog="system"/>
+                    <connections>
+                        <action selector="dissMissPressed:" destination="-1" eventType="touchUpInside" id="Uta-Se-YYZ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemGray6Color"/>
+            <constraints>
+                <constraint firstItem="1Mr-DN-hmB" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.0446429" id="1nn-Gg-sGH"/>
+                <constraint firstItem="YwB-Jo-Iju" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.07" id="BXH-yO-gMJ"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Heg-yZ-LOp" secondAttribute="bottom" constant="35" id="Djg-BJ-iB9"/>
+                <constraint firstItem="QPi-aF-ynz" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.0446429" id="N66-pf-GKA"/>
+                <constraint firstItem="Heg-yZ-LOp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="VhR-gS-v3N"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0d0-cI-6kh" secondAttribute="trailing" constant="20" id="baa-fx-gdx"/>
+                <constraint firstItem="0d0-cI-6kh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="caX-Io-rFj"/>
+                <constraint firstItem="0d0-cI-6kh" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="gtN-GB-ib4"/>
+                <constraint firstItem="Heg-yZ-LOp" firstAttribute="top" secondItem="0d0-cI-6kh" secondAttribute="bottom" constant="25" id="nGr-Wa-mmG"/>
+                <constraint firstItem="npw-Rg-ucc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="naN-oH-fJ6"/>
+                <constraint firstItem="l5q-KO-vOK" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.07" id="oE7-Wx-raB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Heg-yZ-LOp" secondAttribute="trailing" constant="30" id="tUm-Ur-TbL"/>
+                <constraint firstItem="npw-Rg-ucc" firstAttribute="centerY" secondItem="0d0-cI-6kh" secondAttribute="centerY" id="y7P-Xn-mqi"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="99.776785714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrowshape.turn.up.left.fill" catalog="system" width="128" height="106"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
